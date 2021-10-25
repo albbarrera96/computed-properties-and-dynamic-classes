@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO VUE</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+      <h1>TIME TO TRY SOME DYNAMIC CSS TRICKS</h1>
+      <h2>Erste Biespiele</h2>
+      <hr>
+     <div v-on:click="available = !available" v-bind:class="{available: available}">
+      <span>Switch</span>
+
+      </div>
+      <h2>Zweite Biespiele</h2>
+      <button v-on:click="available = !available">Switch Available</button>
+      <button v-on:click="hidden = !hidden">Show hidden message</button>
+      <div v-bind:class="compClasses">
+        <span>Test button</span>
+    </div>
+  </div>
+    <script src="app.js"></script>
+</body>
+</html>
